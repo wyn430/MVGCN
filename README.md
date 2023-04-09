@@ -53,10 +53,12 @@ The available "model name" includes:
 
 * hgcnn: MVGCN only uses coordinates of points and builds graph using Euclidean distance
 * hgcnn_norm: MVGCN uses coordinates and normal vectors of points and builds graph using Euclidean distance
+
 *The above two models uses dataset in folder "Surface_Defects_pcd_extend_2000_estnorm_noise0001"
 
 * hgcnn_geo: MVGCN only uses coordinates of points and builds graph using Geodesic distance
 * hgcnn_norm_geo: MVGCN uses coordinates and normal vectors of points and builds graph using Geodesic distance
+
 *The above two models uses dataset in folder "Surface_Defects_pcd_extend_2000_geod_estnorm_noise0001"
 
 The only difference between these two datasets is that the pairwise Geodesic distance is pre-calculated and put in "Surface_Defects_pcd_extend_2000_geod_estnorm_noise0001".
