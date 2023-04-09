@@ -32,7 +32,6 @@ python 3.6
 CUDA 11.0
 torch 1.4.0
 scikit-learn 0.21.3
-geomloss 0.2.3
 ```
 
 ## Dataset
@@ -41,11 +40,9 @@ The experiments are conducted on synthetic and real-scanned 3D point cloud. The 
 ## Usage
 
 ### MVGCN
-
-Train the proposed MVGCN
-
 CUDA_VISIBLE_DEVICES=ID python main.py --model [model name] --k [# of global neighbor] --kl [# of local neighbor] --batch_size [batch size] --dataset [directory of dataset] --output_C [# of class]
 
+Train the proposed MVGCN
 ```
 e.g. CUDA_VISIBLE_DEVICES=0 python main.py --model hgcnn --k 15 --kl 15 --batch_size 42 --dataset ./Data/Surface_Defects_pcd_extend_2000_estnorm_noise0001 --output_C 4
 ```
@@ -53,13 +50,19 @@ The available "model name" includes:
 
 * hgcnn: MVGCN only uses coordinates of points and builds graph using Euclidean distance
 * hgcnn_norm: MVGCN uses coordinates and normal vectors of points and builds graph using Euclidean distance
+* dgcnn: Graph convolution neural network only uses coordinates of points and builds graph using Euclidean distance
+* dgcnn_norm: Graph convolution neural network uses coordinates and normal vectors of points and builds graph using Euclidean distance
+* pointnet: Pointnet only uses coordinates of points
+* pointnet_norm: Pointnet uses coordinates and normal vectors of points
 
-The above two models uses dataset in folder "Surface_Defects_pcd_extend_2000_estnorm_noise0001"
+The above models uses dataset in folder "Surface_Defects_pcd_extend_2000_estnorm_noise0001"
 
 * hgcnn_geo: MVGCN only uses coordinates of points and builds graph using Geodesic distance
 * hgcnn_norm_geo: MVGCN uses coordinates and normal vectors of points and builds graph using Geodesic distance
+* dgcnn_geo: Graph convolution neural network only uses coordinates of points and builds graph using Geodesic distance
+* dgcnn_norm_geo: Graph convolution neural network uses coordinates and normal vectors of points and builds graph using Geodesic distance
 
-The above two models uses dataset in folder "Surface_Defects_pcd_extend_2000_geod_estnorm_noise0001"
+The above models uses dataset in folder "Surface_Defects_pcd_extend_2000_geod_estnorm_noise0001"
 
 The only difference between these two datasets is that the pairwise Geodesic distance is pre-calculated and put in "Surface_Defects_pcd_extend_2000_geod_estnorm_noise0001".
 
