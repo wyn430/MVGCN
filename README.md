@@ -72,4 +72,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](https://gi
 
 ## Acknowledgments
 
-The implementation of graph convolution operation [repo](https://github.com/WangYueFt/dgcnn).
+The implementation of graph convolution operation refers to [repo](https://github.com/WangYueFt/dgcnn).
