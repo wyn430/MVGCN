@@ -24,14 +24,23 @@ If you find our work useful in your research, please consider citing:
 
 ## Installation
 
-The code has been tested on following environment
+The code has been tested on following two environments
 
 ```
 Ubuntu 18.04
 python 3.6
-CUDA 11.0
+CUDA 11.8
 torch 1.4.0
 scikit-learn 0.21.3
+```
+and 
+
+```
+Ubuntu 20.04
+python 3.10.10
+CUDA 11.8
+torch 2.0.0
+scikit-learn 1.2.2
 ```
 
 ## Dataset
@@ -65,6 +74,9 @@ The above models uses dataset in folder "Surface_Defects_pcd_extend_2000_estnorm
 The above models uses dataset in folder "Surface_Defects_pcd_extend_2000_geod_estnorm_noise0001"
 
 The only difference between these two datasets is that the pairwise Geodesic distance is pre-calculated and put in "Surface_Defects_pcd_extend_2000_geod_estnorm_noise0001".
+
+### Pretrained Models
+Two of the pretrained models are in [folder](https://github.com/wyn430/MVGCN/tree/master/pretrained). It is trained and tested on the dataset "Surface_Defects_pcd_extend_2000_estnorm_noise0001".
 
 ## License
 
