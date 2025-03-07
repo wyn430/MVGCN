@@ -44,7 +44,7 @@ scikit-learn 1.2.2
 ```
 
 ## Dataset
-The experiments are conducted on synthetic and real-scanned 3D point cloud. The synthetic data is available at [folder](https://drive.google.com/drive/folders/1-FC5X8pibPbMWYo4Jpr-GREHPxy5wZjm?usp=share_link). To run the code directly, please download and correctly set the directory of data. The scripts of conducting clustering and calculating Geodesic distance is included in the Jupyter Notebook files.
+The experiments are conducted on synthetic and real-scanned 3D point cloud. The synthetic data is available at [folder](https://drive.google.com/drive/folders/11d5L1DJomhu_RCGtVBslECfsJv48o7AC?usp=sharing). To run the code directly, please download and correctly set the directory of data. The scripts of conducting clustering and calculating Geodesic distance is included in the Jupyter Notebook files.
 
 ## Usage
 
